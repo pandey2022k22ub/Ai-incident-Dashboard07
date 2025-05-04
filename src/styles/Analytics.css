@@ -1,0 +1,36 @@
+/* src/styles/Analytics.css */
+.analytics {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+  }
+  
+  .analytics h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .analytics-summary {
+    text-align: center;
+  }
+  
+  .pie-chart {
+    margin-top: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .analytics-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .analytics-summary h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  

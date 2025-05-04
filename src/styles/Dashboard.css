@@ -1,0 +1,44 @@
+/* Dashboard specific styles */
+.dashboard {
+    margin-left: 250px; /* Push content to the right to make space for sidebar */
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .dashboard p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .overview {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
