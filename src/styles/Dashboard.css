@@ -1,6 +1,6 @@
 /* Dashboard specific styles */
 .dashboard {
-    margin-left: 250px; /* Push content to the right to make space for sidebar */
+    margin-left: 250px; 
     padding: 20px;
     background-color: #f4f4f4;
   }

@@ -1,10 +1,10 @@
-// src/components/Analytics.js
+
 import React, { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import '../styles/Analytics.css';
 
-// Register Chart.js components
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Analytics = ({ incidents }) => {
@@ -13,12 +13,12 @@ const Analytics = ({ incidents }) => {
     datasets: [
       {
         data: [],
-        backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF33A6'], // Different colors for different incident types
+        backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF33A6'], 
       },
     ],
   });
 
-  // Update chart data whenever the incidents change
+ 
   useEffect(() => {
     const typeCount = incidents.reduce((acc, incident) => {
       acc[incident.type] = (acc[incident.type] || 0) + 1;
@@ -33,11 +33,11 @@ const Analytics = ({ incidents }) => {
       datasets: [
         {
           data: data,
-          backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF33A6'], // Color for each type
+          backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF33A6'], 
         },
       ],
     });
-  }, [incidents]); // Re-run this effect whenever incidents change
+  }, [incidents]); 
 
   return (
     <div className="analytics">

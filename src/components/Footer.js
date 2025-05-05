@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "../styles/Footer.css"; // Add separate styling for Footer component
+
 
 function Footer() {
   return (

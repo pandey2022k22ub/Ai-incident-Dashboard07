@@ -1,4 +1,4 @@
-// src/components/ReportIncident.js
+
 import React, { useState } from 'react';
 import '../styles/ReportIncident.css';
 
@@ -18,8 +18,8 @@ const ReportIncident = ({ addIncident }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addIncident(incident); // Add the new incident
-    setIncident({ title: '', description: '', type: '' }); // Clear the form
+    addIncident(incident); 
+    setIncident({ title: '', description: '', type: '' }); 
   };
 
   return (

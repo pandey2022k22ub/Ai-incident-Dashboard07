@@ -1,4 +1,4 @@
-// src/components/IncidentList.js
+
 import React from 'react';
 import '../styles/IncidentList.css';
 

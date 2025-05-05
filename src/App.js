@@ -12,10 +12,10 @@ import Settings from './components/Settings';
 import Footer from './components/Footer';
 
 function App() {
-  const [incidents, setIncidents] = useState([]); // Store incidents
+  const [incidents, setIncidents] = useState([]); 
 
   const addIncident = (incident) => {
-    setIncidents([...incidents, incident]); // Add new incident to the list
+    setIncidents([...incidents, incident]); 
   };
 
   return (
@@ -28,19 +28,19 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Dashboard incidents={incidents} />} // Pass incidents to Dashboard
+                element={<Dashboard incidents={incidents} />} 
               />
               <Route
                 path="/incidents"
-                element={<IncidentList incidents={incidents} />} // Pass incidents to IncidentList
+                element={<IncidentList incidents={incidents} />} 
               />
               <Route
                 path="/report"
-                element={<ReportIncident addIncident={addIncident} />} // Pass addIncident function to ReportIncident
+                element={<ReportIncident addIncident={addIncident} />} 
               />
               <Route
                 path="/analytics"
-                element={<Analytics incidents={incidents} />} // Pass incidents to Analytics
+                element={<Analytics incidents={incidents} />} 
               />
               <Route path="/settings" element={<Settings />} />
             </Routes>
